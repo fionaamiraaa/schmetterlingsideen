@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHMETTERLINGSIDEEN</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #2F184B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .title {
+            font-family: 'LEMON MILK', sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: #2F184B;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+        .content {
+            padding: 20px 5cm; 
+            text-align: center;
+        }
+        .content p {
+            font-family: Georgia, serif; 
+            color: black; 
+            margin-bottom: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .button {
+            font-family: 'LEMON MILK', sans-serif;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .gradient-bg {
+            background: linear-gradient(to bottom, #F4EFFA, #9B72CF);
+        }
+        .founders-title {
+            font-family: 'LEMON MILK', sans-serif;
+            font-weight: bold;
+            color: black;
+            margin-top: 40px;
+        }
+        .offer-title {
+            font-family: 'LEMON MILK', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .subtitle {
+            font-family: 'LEMON MILK', sans-serif;
+            font-size: 18px;
+        }
+        .offer-text {
+            font-family: Georgia, serif; 
+            color: black; 
+            margin-bottom: 20px;
+        }
+        .contact-button {
+            font-family: 'LEMON MILK', sans-serif;
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: #2F184B;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-button:hover {
+            background-color: #532D73;
+        }
+        .popup {
+            position: fixed;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo2.jpeg" alt="Schmetterlingsideen Logo" class="logo" height="210px" width="210px">
+        <h1 class="title">SCHMETTERLINGSIDEEN</h1>
+        <button onclick="scrollToParagraph()" class="button">Home</button>
+        <button onclick="scrollToFounders()" class="button">Die Gründerinnen</button>
+        <button onclick="scrollToOffer()" class="button">Unser Angebot</button>
+    </div>
+    <div class="content gradient-bg" id="content">
+        <p>Wir sind Annalina und Fiona Amira, die Gründerinnen der Marketingfirma Schmetterlingsideen.</p>
+        <p>Beide 16 Jahre alt, wohnen wir im Kanton Zürich, Schweiz, und haben im Sommer 2023 unsere Lehre zur Fachfrau Gesundheit begonnen.</p>
+        <p>Unser Ziel ist es, eine Werbeagentur zu gründen, und wir sind dankbar für das Vertrauen unserer potenziellen Kunden.</p>
+        <p>Auf die Idee mit den Schmetterlingsideen sind wir gekommen, weil es gerade Frühling geworden ist und wir beide diese Jahreszeit sehr mögen.</p>
+        <p>Bei Fragen könnt ihr euch gerne an uns wenden und vielen Dank für euer Vertrauen als potenzielle Kunden!</p>
+        <h2 class="founders-title" id="founders-title">Die Gründerinnen</h2>
+        <div class="images">
+            <img src="fa2.jpg" alt="Bild 2">
+            <img src="fa3.jpg" alt="Bild 3">
+            <img src="fa4.jpg" alt="Bild 4">
+            <img src="fa5.jpg" alt="Bild 5">
+        </div>
+        <h2 class="offer-title">Unser Angebot</h2>
+<h3 class="offer-title" style="font-family: 'LEMON MILK', sans-serif; font-size: 20px; font-weight: bold;">Starter Boost</h3>
+        <p class="offer-text">Starten Sie Ihre Reise zum Erfolg mit unserem "Starter Boost" Paket! Wir sind hier, um Ihnen den entscheidenden Schub zu geben, den Ihr Unternehmen braucht, um aufzublühen. Mit maßgeschneiderten Strategien und kreativen Ansätzen werden wir Ihre Marke ins Rampenlicht rücken und sicherstellen, dass Sie von Anfang an einen starken Eindruck hinterlassen. Lassen Sie uns gemeinsam Ihren Weg zum Erfolg beginnen und Ihre Träume verwirklichen!</p>
+
+<h3 class="offer-title" style="font-family: 'LEMON MILK', sans-serif; font-size: 20px; font-weight: bold;">Growth Accelerator</h3>
+        <p class="offer-text">Es ist Zeit, das Wachstum Ihres Unternehmens zu beschleunigen und neue Höhen zu erreichen! Mit unserem "Growth Accelerator" Paket werden wir Ihr Unternehmen auf die Überholspur des Erfolgs bringen. Von innovativen Marketingstrategien bis hin zu gezielten Kampagnen werden wir alles tun, um sicherzustellen, dass Sie Ihre Ziele übertreffen. Lassen Sie uns zusammen den Turbo zünden und Ihre Visionen Realität werden lassen!</p>
+
+        <h3 class="offer-title" style="font-family: 'LEMON MILK', sans-serif; font-size: 20px; font-weight: bold;">Corporate Dominance Package</h3>
+        <p class="offer-text">Übernehmen Sie die Führung und dominieren Sie Ihre Branche mit unserem "Corporate Dominance Package"! Wir glauben an Ihr Potenzial und sind hier, um sicherzustellen, dass Sie Ihre Position als Marktführer festigen. Mit einer hochgradig personalisierten Strategie und einem Team von Experten werden wir Ihnen helfen, Ihre Konkurrenz zu übertreffen und die Spitze zu erklimmen. Lassen Sie uns gemeinsam die Welt erobern und Ihr Unternehmen zu einem unübertroffenen Erfolg führen!</p>
+    </div>
+
+    <button class="contact-button" onclick="togglePopup()">Kontaktiere uns!</button>
+    <div class="popup" id="popup">
+        <p>Email: schmetterlingsideen@gmail.com</p>
+        <p>Telefon: +41 482 25 27</p>
+    </div>
+
+    <script>
+        function scrollToParagraph() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function scrollToFounders() {
+            const foundersTitle = document.getElementById('founders-title');
+            foundersTitle.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToOffer() {
+            const offerTitle = document.getElementsByClassName('offer-title')[0];
+            offerTitle.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function togglePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
